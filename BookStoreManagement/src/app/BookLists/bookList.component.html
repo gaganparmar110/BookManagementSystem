@@ -1,0 +1,25 @@
+<div class="container">
+<table>
+    <tr><td>sr.number</td>
+        <td>BookTitle  </td>
+        <td>BookName  </td>
+        <td>Author  </td>
+        <td>Price  </td>
+        <td>Publisher  </td>
+        <td>Copies  </td></tr>
+    <tr *ngFor="let book of books,let i=index">
+      <td>{{i+1}}</td>
+      <td>{{book.id}}</td>
+      <td>{{book.Title}}</td>
+      <td>{{book.Name}}</td>
+      <td>{{book.Author}}</td>
+      <td>{{book.Price}}</td>
+      <td>{{book.Publisher}}</td>
+      <td>{{book.Copies}}</td>
+    
+    </tr>
+  </table>
+  </div>
+
+
+   <router-outlet></router-outlet> 
